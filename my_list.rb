@@ -15,6 +15,7 @@ class MyList
   end
 end
 
-example1 = MyList.new(1, 2, 3, 4, 5)
+example1 = MyList.new(1, 2, 3, 4)
 example1.each { |x| puts x.to_s }
-example1.all?
+puts example1.all? { |i| i >= 5 }.to_s
+puts example1.filter {|e| e.even?}.to_s
