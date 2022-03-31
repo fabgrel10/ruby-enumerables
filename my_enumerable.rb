@@ -39,14 +39,14 @@ module MyEnumerable
   # &block
   #
   # Examples
-  #	
+  #
   #   [1, 2, 3, 4].filter { |n| n.even?}
   #   # => [2, 4]
   #
   # Returns a filtered list.
   def filter
     list = []
-    each { |item| list.push(item) if yield(item)}
+    each { |item| list.push(item) if yield(item) }
     list
   end
 end
