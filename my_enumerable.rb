@@ -1,5 +1,3 @@
-# frozen_string_literal: false
-
 # MyEnumerable: My enumerables methods module
 module MyEnumerable
   # Public: mimics the behaviour of all? enumerable

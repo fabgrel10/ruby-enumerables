@@ -1,5 +1,3 @@
-# frozen_string_literal: false
-
 require_relative 'my_enumerable'
 
 # MyList: This class has an instance variable @list
