@@ -5,7 +5,6 @@
 > Ruby program that uses enumerables.
 
 ![screenshot](./app_screenshot1.png)
-![screenshot](./app_screenshot2.png)
 
 ## Getting Started
 
