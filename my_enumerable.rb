@@ -11,9 +11,18 @@ module MyEnumerable
   #
   # Returns true if the condition is met.
   def all?
-    flag = true
-    each { |item| flag = false unless yield(item) }
-    flag
+    if block_given?
+      each { |n| return false unless yield(n) }
+    elsif param.nil?
+      each { |n| return false if !n || n.nil? }
+    elsif !param.nil? && (param.is_a? Class)
+      each { |n| return false unless [n.class, n.class.superclass, n.class.superclass].include?(param) }
+    elsif !param.nil? && (param.is_a? Regexp)
+      each { |n| return false unless n.match(param) }
+    else
+      each { |n| return false unless n == param }
+    end
+    true
   end
 
   # Public: mimics the behaviour of any? enumerable
@@ -27,9 +36,18 @@ module MyEnumerable
   #
   # Returns true if the condition is met.
   def any?
-    flag = false
-    each { |item| flag = true if yield(item) }
-    flag
+    if block_given?
+      each { |n| return true if yield(n) }
+    elsif param.nil?
+      each { |n| return true if n }
+    elsif !param.nil? && (param.is_a? Class)
+      each { |n| return true if [n.class, n.class.superclass, n.class.superclass].include?(param) }
+    elsif !param.nil? && (param.is_a? Regexp)
+      each { |n| return true if n.match(param) }
+    else
+      each { |n| return true if n == param }
+    end
+    false
   end
 
   # Public: mimics the behaviour of filter enumerable

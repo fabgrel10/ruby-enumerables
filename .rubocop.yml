@@ -16,9 +16,12 @@ Metrics/AbcSize:
 Metrics/ClassLength:
   Max: 150
 Metrics/BlockLength:
-  IgnoredMethods: ['describe']
+  IgnoredMethods: ["describe"]
   Max: 30
-
+Metrics/PerceivedComplexity:
+  Max: 100
+Metrics/CyclomaticComplexity:
+  Max: 100
 
 Style/Documentation:
   Enabled: false

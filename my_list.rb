@@ -9,7 +9,11 @@ class MyList
   end
 
   def each
-    @list.each { |x| yield(x) if block_given? }
+    i = 0
+    while i < @list.length
+      yield @list[i]
+      i += 1
+    end
   end
 end
 
