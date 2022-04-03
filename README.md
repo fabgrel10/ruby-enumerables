@@ -19,6 +19,13 @@ If you don't have ruby installed, you can install it with one of the following m
 
 ## Authors
 
+👤 **Andres Condezo**
+
+| &nbsp;       | &nbsp;                                                        |
+| ------------ | ------------------------------------------------------------- |
+| **GitHub**   | [@Andres Condezo](https://github.com/andres-condezo)          |
+| **LinkedIn** | [andres-condezo](https://www.linkedin.com/in/andres-condezo/) |
+
 👤 **Leonardo Albornoz**
 
 | &nbsp;       | &nbsp;                                           |
@@ -27,12 +34,6 @@ If you don't have ruby installed, you can install it with one of the following m
 | **Twitter**  | [@Leboroz](https://twitter.com/leboroz)          |
 | **LinkedIn** | [@Leboroz](https://www.linkedin.com/in/leboroz/) |
 
-👤 **Andres Condezo**
-
-| &nbsp;       | &nbsp;                                                        |
-| ------------ | ------------------------------------------------------------- |
-| **GitHub**   | [@Andres Condezo](https://github.com/andres-condezo)          |
-| **LinkedIn** | [andres-condezo](https://www.linkedin.com/in/andres-condezo/) |
 
 👤 **Fabrizio Garcia**
 
